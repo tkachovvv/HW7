@@ -34,11 +34,12 @@ public class Main {
         int downPayment = 15000;
         int interest = 0;
         int monthNumber = 1;
-        while (interest <= 12_000_000) {
+        for (;interest <= 12_000_000; monthNumber++) {
             downPayment = downPayment + ((downPayment/100) * 7);
             interest = downPayment + ((downPayment/100) * 7);
-            System.out.println("Месяц " + monthNumber + " Размер депозита составляет: " + interest);
-            monthNumber++;
+            if (monthNumber % 6 ==0) {
+                System.out.println("Месяц " + monthNumber + " Размер депозита составляет: " + interest);
+            }
         }
 
     }
