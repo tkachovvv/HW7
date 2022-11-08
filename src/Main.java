@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
@@ -8,6 +10,26 @@ public class Main {
             total = installment + total;
             System.out.println("Месяц " + month + " Сумма накоплений: " + total + " рублей.");
             month++;
+        }
+        int n = 1;
+        while (n <= 10) {
+            System.out.print(n + " ");
+            n++;
+        }
+        System.out.println();
+        for (n = 10; n >= 1; n--) {
+                System.out.print(n + " ");
+        }
+        System.out.println();
+
+        int y = 12_000_000;
+        int death = 8;
+        int birth = 17;
+        for (int year = 2022; year < 2032; year++) {
+            death = (y/1000) * 8;
+            birth = (y/1000) * 17;
+            y = y + (birth - death);
+            System.out.println("Год " + year + ", численность населения составляет: " + y);
         }
 
     }
