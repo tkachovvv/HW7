@@ -31,6 +31,15 @@ public class Main {
             y = y + (birth - death);
             System.out.println("Год " + year + ", численность населения составляет: " + y);
         }
+        int downPayment = 15000;
+        int interest = 0;
+        int monthNumber = 1;
+        while (interest <= 12_000_000) {
+            downPayment = downPayment + ((downPayment/100) * 7);
+            interest = downPayment + ((downPayment/100) * 7);
+            System.out.println("Месяц " + monthNumber + " Размер депозита составляет: " + interest);
+            monthNumber++;
+        }
 
     }
 }
