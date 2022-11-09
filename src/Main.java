@@ -41,6 +41,15 @@ public class Main {
                 System.out.println("Месяц " + monthNumber + " Размер депозита составляет: " + downPayment);
             }
         }
-
+        float firstInstallment = 15000;
+        float interestRate = 0;
+        for (int monthDeposit = 1; monthDeposit <= 108; monthDeposit++) {
+            interestRate = (firstInstallment / 100) * 7;
+            firstInstallment = firstInstallment + interestRate;
+            if (monthDeposit % 6 == 0) {
+                System.out.println("Месяц " + monthDeposit + " Размер депозита составляет: " + firstInstallment);
+            }
+        }
     }
 }
+
