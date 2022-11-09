@@ -50,6 +50,13 @@ public class Main {
                 System.out.println("Месяц " + monthDeposit + " Размер депозита составляет: " + firstInstallment);
             }
         }
+        int friday = 1;
+        int daysOfTheMonth = 0;
+        for (friday = 1; friday <= 31; friday++) {
+            if (friday % 7 == 0) {
+                System.out.println("Сегодня пятница, " + friday + " число. Пора подготовить отчет.");
+            }
+        }
     }
 }
 
