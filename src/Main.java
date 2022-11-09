@@ -31,14 +31,14 @@ public class Main {
             y = y + (birth - death);
             System.out.println("Год " + year + ", численность населения составляет: " + y);
         }
-        int downPayment = 15000;
-        int interest = 0;
+        float downPayment = 15000;
+        float interest = 0;
         int monthNumber = 1;
-        for (;interest <= 12_000_000; monthNumber++) {
-            downPayment = downPayment + ((downPayment/100) * 7);
-            interest = downPayment + ((downPayment/100) * 7);
-            if (monthNumber % 6 ==0) {
-                System.out.println("Месяц " + monthNumber + " Размер депозита составляет: " + interest);
+        for (downPayment = 15000; downPayment <= 12000000; monthNumber++) {
+            interest = (downPayment / 100) * 7;
+            downPayment = downPayment + interest;
+            if (monthNumber % 6 == 0) {
+                System.out.println("Месяц " + monthNumber + " Размер депозита составляет: " + downPayment);
             }
         }
 
