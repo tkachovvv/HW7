@@ -63,7 +63,12 @@ public class Main {
             startingYear = startingYear + 79;
                 System.out.println(startingYear);
         }
-
+        int multiplyTwo = 2;
+        int multiply10 = 1;
+        for (multiply10 = 1; multiply10 <= 10; multiply10++) {
+            int sum = multiply10 * 2;
+            System.out.println(multiply10 + "*" + "2" + "=" + sum + "\t" );
+        }
     }
 }
 
