@@ -57,6 +57,13 @@ public class Main {
                 System.out.println("Сегодня пятница, " + friday + " число. Пора подготовить отчет.");
             }
         }
+        int currentYear = 2017;
+        int startingYear = 1817;;
+        for (startingYear = 1817; startingYear <= 2117;) {
+            startingYear = startingYear + 79;
+                System.out.println(startingYear);
+        }
+
     }
 }
 
